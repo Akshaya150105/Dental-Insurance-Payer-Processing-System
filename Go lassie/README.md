@@ -14,7 +14,7 @@ This project is a solution for the Golassie Hackathon Internship Assessment. It 
   - `Payer` 1-to-many `PayerDetail`.
 
 ### Mapping Algorithm
-1. **Loading**: Processes the first two non-legend sheets from `payers.xlsx` using `pandas` and `openpyxl`.
+1. **Loading**: Processes the first non-legend sheets from `payers.xlsx` using `pandas` and `openpyxl`.
 2. **Grouping**: Infers payer groups using predefined rules and semantic matching with `rapidfuzz`.
 3. **Deduplication**: Matches payers by payer number and name similarity, handling edge cases:
    - Different names, same payer number (same or different payers based on context).
