@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payer Mappings</title>
+</head>
+<body>
+    <h1>Payer Mappings</h1>
+    <table border="1">
+        <tr>
+            <th>Raw Name</th>
+            <th>Payer Number</th>
+            <th>Assigned Payer</th>
+            <th>Group</th>
+            <th>Action</th>
+        </tr>
+        {% for detail in payer_details %}
+        <tr>
+            <td>{{ detail.payer_name_raw }}</td>
+            <td>{{ detail.payer_number }}</td>
+            <td>{{ detail.payer.name }} ({{ detail.payer.pretty_name or 'Not Set' }})</td>
+            <td>{{ detail.payer.payer_group.name }}</td>
+            <td><a href="{{ url_for('set_pretty_name', payer_id=detail.payer.id) }}">Set Pretty Name</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('index') }}">Back</a>
+</body>
+</html>

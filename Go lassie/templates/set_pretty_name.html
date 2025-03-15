@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Pretty Name</title>
+</head>
+<body>
+    <h1>Set Pretty Name for {{ payer.name }}</h1>
+    <form method="POST">
+        <input type="text" name="pretty_name" value="{{ payer.pretty_name or '' }}" placeholder="Enter pretty name">
+        <button type="submit">Save</button>
+    </form>
+    <a href="{{ url_for('map_payers') }}">Back</a>
+</body>
+</html>
