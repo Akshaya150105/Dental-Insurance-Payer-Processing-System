@@ -1,7 +1,7 @@
 # Dental Insurance Payer Processing System
 
 ## Overview
-This project is a solution for the Golassie Hackathon Internship Assessment. It addresses the challenges of processing Electronic Remittance Advice (ERA) documents in the dental insurance industry by managing payer information, deduplicating payers, and assigning consistent display names.
+It addresses the challenges of processing Electronic Remittance Advice (ERA) documents in the dental insurance industry by managing payer information, deduplicating payers, and assigning consistent display names.
 
 ## Implementation
 
